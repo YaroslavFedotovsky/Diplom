@@ -1,0 +1,26 @@
+﻿<Page x:Class="AutoSystemOfData.Pages.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoSystemOfData.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="520" d:DesignWidth="800"
+      Title="AuthorizationPage">
+
+    <Grid Style="{StaticResource gridBackgr}">
+        <Grid Height="300" Width="400">
+            <Border BorderBrush="#bf8511" BorderThickness="1" Background="#f2c66d" CornerRadius="20"/>
+            <TextBlock  Margin="65,88,257,184" Text="Логин:" FontSize="20" Style="{StaticResource txtBlckHeadStyle}"/>
+
+            <TextBlock HorizontalAlignment="Center" Margin="30" Text="Авторизация" Style="{StaticResource txtBlckHeadStyle}"/>
+            <TextBox x:Name="logField" HorizontalAlignment="Left" Margin="66,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28" Style="{StaticResource txtBox}"></TextBox>
+
+            <TextBlock  Margin="65,165,257,107" Text="Пароль:" FontSize="20" Style="{StaticResource txtBlckHeadStyle}"/>
+            <PasswordBox x:Name="passField" HorizontalAlignment="Left" Margin="66,198,0,0" VerticalAlignment="Top" Width="242" Height="28" Style="{StaticResource passBox}"></PasswordBox>
+
+            <Button HorizontalAlignment="Center" Content="Войти" Margin="0,250,0,20" FontSize="18" Style="{StaticResource btnType}" RenderTransformOrigin="0.58,0.299" Click="LoginToTheSystem"/>
+
+        </Grid>
+    </Grid>
+</Page>

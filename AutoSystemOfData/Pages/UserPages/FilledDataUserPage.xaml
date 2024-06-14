@@ -1,0 +1,69 @@
+﻿<Page x:Class="AutoSystemOfData.Pages.UserPages.FilledDataUserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoSystemOfData.Pages.UserPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="520" d:DesignWidth="800"
+      Title="FilledDataUserPage">
+
+    <Grid Style="{StaticResource gridBackgr}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Margin="0 35 0 0" CornerRadius="10" Background="#f2b53a">
+            <DockPanel>
+                <Border Width="80" Height="80" Padding="3" Background="#fcf2de" CornerRadius="100" DockPanel.Dock="Top" Margin="0 -35 0 0">
+                    <Ellipse>
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Resources/User.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </Border>
+
+                <Button Content="Главная" Margin="0 20 0 0" DockPanel.Dock="Top" Click="Go_ToMainUserPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="Мои заявки" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToMyRequestsUser" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="План" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToPlanUserPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="Засев" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToSittingUserPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="Подкормка" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToFeedingUserPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="Химпрополка" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToChemicalRegimentUserPage"  Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="Уборка" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToHarvestingUserPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Height="50" Margin="0 15 0 0" DockPanel.Dock="Top" Style="{StaticResource btnNavigateStyleNow}">
+                    <TextBlock>Заполненные<LineBreak/><TextBlock Margin="20 0 0 0">данные</TextBlock></TextBlock>
+                </Button>
+
+            </DockPanel>
+        </Border>
+
+        <Grid Grid.Column="1">
+            <TextBlock x:Name="orgTextBlock" TextDecorations="Underline" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Style="{StaticResource txtBlckHeadStyle}"></TextBlock>
+
+            <StackPanel Margin="0 100 0 0">
+                <TextBlock Text="Мои заявки" HorizontalAlignment="Center" FontSize="22" Style="{StaticResource txtBlckHeadStyle}"/>
+                <StackPanel Orientation="Horizontal" Margin="30 0 15 0">
+                    <StackPanel Margin="15">
+                        <TextBlock Text="Дата начала:" Margin="0 5 0 5" FontSize="16" Style="{StaticResource txtBlckHeadStyle}"/>
+                        <DatePicker x:Name="DatePickerStart" Style="{StaticResource datePickerStyle}"/>
+                    </StackPanel>
+                    <StackPanel Margin="15">
+                        <TextBlock Text="Дата начала:" Margin="0 5 0 5" FontSize="16" Style="{StaticResource txtBlckHeadStyle}"/>
+                        <DatePicker x:Name="DatePickerEnd" Style="{StaticResource datePickerStyle}"/>
+                    </StackPanel>
+                    <Button Content="Отобразить" Margin="30 30 0 0" Click="FillFormsWithDate" Style="{StaticResource btnType}"></Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="20 10 0 0">
+                    <DataGrid x:Name="DataGridFilledDataView" Height="250" Width="450" Margin="5 0 20 0" Background="#fcf2de" AutoGenerateColumns="True" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                        <DataGrid.Columns>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="Экспорт" Width="100" Margin="25 0 0 0" Click="Export" Style="{StaticResource btnType}"></Button>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

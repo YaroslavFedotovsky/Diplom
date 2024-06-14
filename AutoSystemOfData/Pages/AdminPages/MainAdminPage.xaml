@@ -1,0 +1,83 @@
+﻿<Page x:Class="AutoSystemOfData.Pages.AdminPages.MainAdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoSystemOfData.Pages.AdminPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="520" d:DesignWidth="800"
+      Title="MainAdminPage">
+
+    <Grid Style="{StaticResource gridBackgr}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Margin="0 35 0 0" CornerRadius="10" Background="#f2b53a">
+            <DockPanel>
+                <Border Width="80" Height="80" Padding="3" Background="#fcf2de" CornerRadius="100" DockPanel.Dock="Top" Margin="0 -35 0 0">
+                    <Ellipse>
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Resources/Admin.png"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </Border>
+
+                <Button Content="Главная" Margin="0 20 0 0" DockPanel.Dock="Top" Style="{StaticResource btnNavigateStyleNow}"></Button>
+                <Button VerticalAlignment="Top" Content="Заявки" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToRequestsOfUsersPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="Пользователи" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToViewUsersPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="Организации" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToViewOrgsPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Height="50" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToViewCulturesPage" Style="{StaticResource btnNavigateStyle}">
+                    <TextBlock>Посевные<LineBreak/><TextBlock Margin="3 0 0 0">культуры</TextBlock></TextBlock>
+                </Button>
+                <Button VerticalAlignment="Top" Content="Данные" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToViewDataPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                <Button VerticalAlignment="Top" Content="Отчетность" Margin="0 15 0 0" DockPanel.Dock="Top" Click="Go_ToReportPage" Style="{StaticResource btnNavigateStyle}"></Button>
+                
+            </DockPanel>
+        </Border>
+
+        <Grid Grid.Column="1">
+            <TextBlock TextDecorations="Underline" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Style="{StaticResource txtBlckHeadStyle}">Кабинет Администратора</TextBlock>
+            <StackPanel Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 110 20 0" Orientation="Horizontal">
+                <TextBlock FontSize="22" Style="{StaticResource txtBlckHeadStyle}">Заявки:</TextBlock>
+                <TextBlock x:Name="countRequestTextBlock" Margin="10 0 0 0" FontSize="22" Foreground="DarkRed" Style="{StaticResource txtBlckHeadStyle}"/>
+            </StackPanel>
+            <StackPanel Width="550" Height="400">
+                <TextBlock Margin="0 50 0 0" FontSize="22" Style="{StaticResource txtBlckHeadStyle}">
+                Администратор:
+                </TextBlock>
+                <TextBlock x:Name="userTextBlock" HorizontalAlignment="Left" Margin="0 10 0 0" Width="400" FontSize="18" TextWrapping="Wrap" Style="{StaticResource txtBlckHeadStyle}"/>
+                <TextBlock Margin="0 50 0 0" FontSize="22" Style="{StaticResource txtBlckHeadStyle}">
+                Сводные данные:
+                </TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Количество организаций/ведомств в области:" Margin="0 20 10 0" FontSize="17" Style="{StaticResource txtBlckHeadStyle}"/>
+                    <TextBlock x:Name="countOrgTextBlock" Margin="0 20 10 0" FontSize="18" Style="{StaticResource txtBlckHeadStyle}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Количество пользователей:" Margin="0 15 10 0" FontSize="17" Style="{StaticResource txtBlckHeadStyle}"/>
+                    <TextBlock x:Name="countUserTextBlock" Margin="0 15 10 0" FontSize="18" Style="{StaticResource txtBlckHeadStyle}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Количество разновидностей посевных культур:" Margin="0 15 10 0" FontSize="17" Style="{StaticResource txtBlckHeadStyle}"/>
+                    <TextBlock x:Name="countCultureTextBlock" Margin="0 15 10 0" FontSize="18" Style="{StaticResource txtBlckHeadStyle}"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="400,420,0,0" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14"  Style="{StaticResource txtBlckHeadStyle}">Время:</TextBlock>
+                    <TextBlock Name="LiveTimeTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 0 0 0" FontSize="14"  Style="{StaticResource txtBlckHeadStyle}"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0 10 0 0" FontSize="14"  Style="{StaticResource txtBlckHeadStyle}">Дата:</TextBlock>
+                    <TextBlock Name="LiveDateTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10 10 0 0" FontSize="14"  Style="{StaticResource txtBlckHeadStyle}"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+
+
+        </Grid>
+
+    </Grid>
+</Page>

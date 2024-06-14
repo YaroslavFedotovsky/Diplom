@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5FD389-E68D-4F5D-BC15-96D54CB4AB24}|AutoSystemOfData\\AutoSystemOfData.csproj|c:\\users\\yaroslav\\desktop\\autosystemofdata\\autosystemofdata\\pages\\adminpages\\mainadminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8F5FD389-E68D-4F5D-BC15-96D54CB4AB24}|AutoSystemOfData\\AutoSystemOfData.csproj|solutionrelative:autosystemofdata\\pages\\adminpages\\mainadminpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5FD389-E68D-4F5D-BC15-96D54CB4AB24}|AutoSystemOfData\\AutoSystemOfData.csproj|C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\autosystemofdata\\pages\\userpages\\mainuserpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5FD389-E68D-4F5D-BC15-96D54CB4AB24}|AutoSystemOfData\\AutoSystemOfData.csproj|solutionrelative:autosystemofdata\\pages\\userpages\\mainuserpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5FD389-E68D-4F5D-BC15-96D54CB4AB24}|AutoSystemOfData\\AutoSystemOfData.csproj|C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\autosystemofdata\\pages\\adminpages\\mainadminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5FD389-E68D-4F5D-BC15-96D54CB4AB24}|AutoSystemOfData\\AutoSystemOfData.csproj|solutionrelative:autosystemofdata\\pages\\adminpages\\mainadminpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F5FD389-E68D-4F5D-BC15-96D54CB4AB24}|AutoSystemOfData\\AutoSystemOfData.csproj|C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\autosystemofdata\\databaseconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F5FD389-E68D-4F5D-BC15-96D54CB4AB24}|AutoSystemOfData\\AutoSystemOfData.csproj|solutionrelative:autosystemofdata\\databaseconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainUserPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\AutoSystemOfData\\Pages\\UserPages\\MainUserPage.xaml.cs",
+              "RelativeDocumentMoniker": "AutoSystemOfData\\Pages\\UserPages\\MainUserPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\AutoSystemOfData\\Pages\\UserPages\\MainUserPage.xaml.cs",
+              "RelativeToolTip": "AutoSystemOfData\\Pages\\UserPages\\MainUserPage.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T11:07:13.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainAdminPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\AutoSystemOfData\\Pages\\AdminPages\\MainAdminPage.xaml.cs",
+              "RelativeDocumentMoniker": "AutoSystemOfData\\Pages\\AdminPages\\MainAdminPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\AutoSystemOfData\\Pages\\AdminPages\\MainAdminPage.xaml.cs",
+              "RelativeToolTip": "AutoSystemOfData\\Pages\\AdminPages\\MainAdminPage.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAiwCMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T12:59:25.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseConnect.cs",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\AutoSystemOfData\\DatabaseConnect.cs",
+              "RelativeDocumentMoniker": "AutoSystemOfData\\DatabaseConnect.cs",
+              "ToolTip": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\AutoSystemOfData\\DatabaseConnect.cs",
+              "RelativeToolTip": "AutoSystemOfData\\DatabaseConnect.cs",
+              "ViewState": "AQIAANYCAAAAAAAAAAAAwI4CAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T10:43:28.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainAdminPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\AutoSystemOfData\\Pages\\AdminPages\\MainAdminPage.xaml",
+              "RelativeDocumentMoniker": "AutoSystemOfData\\Pages\\AdminPages\\MainAdminPage.xaml",
+              "ToolTip": "C:\\Users\\Yaroslav\\Desktop\\AutoSystemOfData\\AutoSystemOfData\\Pages\\AdminPages\\MainAdminPage.xaml",
+              "RelativeToolTip": "AutoSystemOfData\\Pages\\AdminPages\\MainAdminPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-11T12:14:18.345Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
